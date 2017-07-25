@@ -1,0 +1,52 @@
+//Estilos Menu
+.a-menu{
+	display: inline-block;
+	text-align: center !important;
+	margin: 0;
+	padding: 20px;
+	width: 100%;
+	background-color: $pink;
+
+	display: flex;
+	justify-content: center;
+
+/*
+	position: absolute;
+	top: 0;
+	left: 0;
+*/
+
+}
+
+.a-menu__item{
+	display: inline;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 15px;
+	color: $white;
+}
+
+.a-menu__item__link{
+	color: $white;
+	&:hover{
+	}
+}
+
+.a-menu__item__img{
+	display: inline;
+	width: 30%;
+	height: auto;
+	border-radius: 50%;
+/*
+	position: relative;
+	top: 0;
+	left: 350px;
+	z-index: 100;
+*/
+
+}
+
+//Sección Principal
+.principal{
+	background-color: $blue;
+}

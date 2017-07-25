@@ -1,7 +1,51 @@
+.a-menu {
+  display: inline-block;
+  text-align: center !important;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  background-color: #f04949;
+  display: flex;
+  justify-content: center;
+  /*
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  */ }
+
+.a-menu__item {
+  display: inline;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px;
+  color: #efefef; }
+
+.a-menu__item__link {
+  color: #efefef; }
+
+.a-menu__item__img {
+  display: inline;
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  /*
+  	position: relative;
+  	top: 0;
+  	left: 350px;
+  	z-index: 100;
+  */ }
+
+.principal {
+  background-color: #203748; }
+
 body {
   padding: 0;
   margin: 0;
   font-family: 'Archivo Narrow', sans-serif;
   overflow-x: hidden; }
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */
