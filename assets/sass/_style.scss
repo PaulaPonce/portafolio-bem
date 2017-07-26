@@ -1,52 +1,102 @@
 //Estilos Menu
-.a-menu{
-	display: inline-block;
+.a-menu, .social-menu{
 	text-align: center !important;
 	margin: 0;
-	padding: 20px;
 	width: 100%;
 	background-color: $pink;
 
 	display: flex;
-	justify-content: center;
-
-/*
-	position: absolute;
-	top: 0;
-	left: 0;
-*/
-
+	flex-direction: row;
+	align-items: center;
 }
 
-.a-menu__item{
-	display: inline;
+.a-menu__item, .social-menu__item{
+	list-style: none;
+	white-space: nowrap;
 	font-size: 20px;
 	font-weight: 700;
 	padding: 15px;
 	color: $white;
 }
 
-.a-menu__item__link{
+.a-menu__item__link, .social-menu__item__link{
 	color: $white;
+	text-decoration: none;
 	&:hover{
+		text-decoration: underline;
 	}
 }
 
+.a-menu__item__link--active{
+	background-color: $blue;
+	border-radius: 20px;
+	padding: 5px 20px;
+}
+
 .a-menu__item__img{
-	display: inline;
-	width: 30%;
+	width: 15%;
 	height: auto;
 	border-radius: 50%;
-/*
-	position: relative;
-	top: 0;
-	left: 350px;
-	z-index: 100;
-*/
-
 }
 
 //Sección Principal
 .principal{
+	color: $white;
 	background-color: $blue;
+	padding: 50px 100px;
+
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.principal__img{
+	width: 15%;
+	height: 15%;
+	border-radius: 50%;
+}
+
+.principal__title{
+	color: $green;
+}
+
+.principal__button{
+	font-size: 20px;
+	font-weight: 700;
+	color: $white;
+	background-color: $green;
+	border-radius: 20px;
+	border: 1px solid $green;
+	padding: 10px 30px;
+}
+
+.social-menu{
+	background-color: $blue;
+	justify-content: center;
+}
+
+//Nueva Sección
+.projects{
+	padding: 20px;
+	background-color: $lightblue;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.projects__item{
+	display:flex;
+	flex-direction: row;
+}
+
+.projects__title{
+	color: $white;
+	font-size: 35px;
+	padding: 20px;
+}
+
+.projects__item__img{
+	width: 85%;
+	height: auto;
 }
